@@ -14,40 +14,63 @@
     box-sizing: border-box;
 }
 // 1. variables
-$prime-color: hsl(248, 38%, 16%);
-$second-color: hsl(280, 57%, 58%);
+$prime-color: hsl(244, 38%, 16%);
+$second-color: hsl(277, 64%, 61%);
 // 2. mixins
 // 3. tags
 section {
     display: grid;
+    height: 100vh;
     width: 100vw;
     grid-template-columns: repeat(2, 1fr);
 }
 img {
     width: 100%;
+    height: 100%;
+}
+h2 {
+    font-size: 50px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+p, td {
+    font-size: 15px;
+}
+table, tr, tbody {
+    width: 100%;
 }
 tr {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     td {
-        font-weight: 100;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-weight: 400;
     }
     .number {
+        color: white;
         font-size: 20px;
+        font-weight: 700;
+        display: block;
     }
 }
 // 4. classes
 .text-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
     background-color: $prime-color;
     color: white;
     text-align: center;
     padding: 60px;
-    h2 {
-        font-size: 50px;
-    }
+    height: 100%;
+    width: 100%;
     .insights {
         color: $second-color;
+    }
+    div {
+        width: 100%;
     }
 }
 // 5. media queries
