@@ -109,4 +109,15 @@ tr .number {
   display: block;
   content: "";
 }
+
+@media only screen and (max-width: 1020px) {
+  section {
+    -ms-grid-rows: 75vh max-content;
+        grid-template-rows: 75vh -webkit-max-content;
+        grid-template-rows: 75vh max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
 /*# sourceMappingURL=style.css.map */

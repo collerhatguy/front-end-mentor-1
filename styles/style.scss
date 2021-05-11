@@ -97,3 +97,9 @@ tr {
     content: "";
 }
 // 5. media queries
+@media only screen and (max-width: 1020px) {
+    section {
+        grid-template-rows: 75vh max-content;
+        height: max-content;
+    }
+}
