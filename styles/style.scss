@@ -1,13 +1,53 @@
 // table of contents
+// 0. default stats
 // 1. variables
 // 2. mixins
 // 3. tags
-// 4. media queries
+// 4. classes
+// 5. media queries
 
 
+// 0. default stats
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 // 1. variables
 $prime-color: hsl(248, 38%, 16%);
 $second-color: hsl(280, 57%, 58%);
 // 2. mixins
 // 3. tags
-// 4. media queries
+section {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+}
+img {
+    width: 100%;
+}
+tr {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    td {
+        font-weight: 100;
+    }
+    .number {
+        font-size: 20px;
+    }
+}
+// 4. classes
+.text-card {
+    background-color: $prime-color;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    h2 {
+        font-size: 50px;
+    }
+    .insights {
+        color: $second-color;
+    }
+}
+// 5. media queries

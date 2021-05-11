@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+  width: 100%;
+}
+
+tr {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+tr td {
+  font-weight: 100;
+}
+
+tr .number {
+  font-size: 20px;
+}
+
+.text-card {
+  background-color: #1d1938;
+  color: white;
+  text-align: center;
+  padding: 60px;
+}
+
+.text-card h2 {
+  font-size: 50px;
+}
+
+.text-card .insights {
+  color: #a857d1;
+}
+/*# sourceMappingURL=style.css.map */
